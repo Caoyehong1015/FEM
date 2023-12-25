@@ -1,9 +1,9 @@
 %==========================================================================%
 %                  HEAD                                                    %
 %              TestPlatform                                                %
-%          RANQI                                                           %
+%          CaoYeHon                                                        %
 %              HUNAN UNIVERSITY.                                           %
-%                  ranqi@hnu.edu.cn                                        %
+%                                                                          %
 %==========================================================================%
 function [gcoords,nodes,nnpe,ndpn,ElasticM,PoissonR,BC,load,dimension,element_type,SecType,Thickness,Density] = loadinp(dictionary)
 format long
@@ -87,60 +87,8 @@ temp=strsplit(all{location_element+1},'=');
 element_type=temp{2};
 fprintf('Element type:%s\n',element_type);
 switch element_type
-    case 'S4R' 
-        nnpe=4;   
-        ndpn=6;          
-        dimension=3;    
-    case 'S4R5'         
-        nnpe=4;
-        ndpn=5;
-        dimension=3;
-    case 'S3R'   
-        nnpe=3;
-        ndpn=6;
-        dimension=3;
-    case 'S4'    
-        nnpe=4;
-        ndpn=6;
-        dimension=3;
-    case 'S3'     
-        nnpe=3;
-        ndpn=6;
-        dimension=3;
-    case 'C3D4'  
-        nnpe=4;
-        ndpn=3;
-        dimension=3;
-    case 'C3D6'   
-        nnpe=6;
-        ndpn=3;
-        dimension=3;
-    case 'C3D8'   
-        nnpe=8;
-        ndpn=3;
-        dimension=3;
-    case 'C3D8R'  
-        nnpe=8;
-        ndpn=3;
-        dimension=3;
-    case 'C3D10M'    
-        nnpe=10;
-        ndpn=3;
-        dimension=3;
     case 'CPS6'     
         nnpe=6;
-        ndpn=2;
-        dimension=2;
-    case 'B31'
-        nnpe=2;
-        ndpn=2;
-        dimension=3;
-    case 'C3D8I'
-        nnpe=8;
-        ndpn=3;
-        dimension=3;
-    case 'CPS4'
-        nnpe=4;
         ndpn=2;
         dimension=2;
     otherwise
