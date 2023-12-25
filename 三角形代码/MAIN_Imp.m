@@ -1,9 +1,9 @@
 %==========================================================================%
 %                  HEAD                                                    %
 %              TestPlatform_Implicit                                       %
-%          RANQI                                                           %
+%          CaoYeHon                                                        %
 %              HUNAN UNIVERSITY.                                           %
-%                  ranqi@hnu.edu.cn                                        %
+%                                                                          %
 %==========================================================================%
 
 % START
@@ -21,10 +21,10 @@ fprintf('Load Data Finished\n');
 %==========================================================================
 
 % PAPERING WORK
-    nes = length(nodes(:,1));               % ÏµÍ³µ¥ÔªÊı
-    nns = length(gcoords(:,1));             % ÏµÍ³½ÚµãÊı
-    nds = nns * ndpn;                       % ÏµÍ³×ÔÓÉ¶ÈÊı
-   ndpe = ndpn * nnpe;                      % µ¥Ôª×ÔÓÉ¶ÈÊı
+    nes = length(nodes(:,1));               % ç³»ç»Ÿå•å…ƒæ•°
+    nns = length(gcoords(:,1));             % ç³»ç»ŸèŠ‚ç‚¹æ•°
+    nds = nns * ndpn;                       % ç³»ç»Ÿè‡ªç”±åº¦æ•°
+   ndpe = ndpn * nnpe;                      % å•å…ƒè‡ªç”±åº¦æ•°
      ff = sparse(nds,1);
      kk = sparse(nds,nds);
    Disp = sparse(nds,1);
